@@ -13,7 +13,7 @@
 // Catch documentation errors caused by code changes.
 #![deny(rustdoc::broken_intra_doc_links)]
 #![deny(missing_debug_implementations)]
-#![deny(missing_docs)]
+//#![deny(missing_docs)]
 #![deny(unsafe_code)]
 #![allow(clippy::too_many_arguments)]
 #![allow(clippy::many_single_char_names)]
@@ -49,7 +49,7 @@ mod scalar;
 pub use scalar::Scalar;
 
 #[cfg(feature = "groups")]
-mod fp;
+pub mod fp;
 #[cfg(feature = "groups")]
 mod fp2;
 #[cfg(feature = "groups")]
